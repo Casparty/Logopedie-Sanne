@@ -3,35 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Praktijk Stem & Klank – Logopedie & Studiebegeleiding</title>
-  <meta name="description" content="Praktijk Stem & Klank biedt logopedie, studiebegeleiding en gebarenstem in een warme, professionele omgeving. Welkom in onze praktijk!" />
-  <meta name="keywords" content="logopedie, spraaktherapie, studiebegeleiding, gebarenstem, stem therapie, articulatie, taaltherapie, België" />
+  <title>Praktijk Stem &amp; Klank &ndash; Logopedie &amp; Studiebegeleiding</title>
+  <meta name="description" content="Praktijk Stem &amp; Klank biedt logopedie, studiebegeleiding en gebarenstem in een warme, professionele omgeving. Welkom in onze praktijk!" />
+  <meta name="keywords" content="logopedie, spraaktherapie, studiebegeleiding, gebarenstem, stem therapie, articulatie, taaltherapie, Belgie" />
   <link rel="stylesheet" href="style.css" />
-  <!-- Google Fonts: Playfair Display (display) + DM Sans (body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-<!-- ===================== HEADER / NAV ===================== -->
+<!-- ======================================================
+     HEADER
+     ====================================================== -->
 <header id="top">
   <div class="header-inner container">
-    <!-- Logo -->
-    <a href="#top" class="logo" aria-label="Stem & Klank – naar de homepagina">
+
+    <a href="#top" class="logo" aria-label="Stem en Klank homepage">
       <div class="logo-mark">S&amp;K</div>
       <div class="logo-text">
         <span class="logo-name">Stem &amp; Klank</span>
-        <span class="logo-sub">Logopedie · Studiebegeleiding</span>
+        <span class="logo-sub">Logopedie &middot; Studiebegeleiding</span>
       </div>
     </a>
 
-    <!-- Hamburger (mobile) -->
-    <button class="nav-toggle" aria-label="Menu openen" aria-expanded="false">
-      <span></span><span></span><span></span>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu openen" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
     </button>
 
-    <!-- Main navigation -->
-    <nav class="main-nav" aria-label="Hoofdmenu">
+    <nav class="main-nav" id="mainNav" aria-label="Hoofdmenu">
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#team">Team</a></li>
@@ -42,16 +43,20 @@
         <li><a href="#contact" class="btn-nav">Contact</a></li>
       </ul>
     </nav>
+
   </div>
 </header>
 
 <main>
 
-<!-- ===================== HERO / HOME ===================== -->
+<!-- ======================================================
+     HOME / HERO
+     ====================================================== -->
 <section id="home" class="section hero">
   <div class="hero-bg-shape"></div>
   <div class="container hero-content">
-    <!-- hero-text comes first in DOM so it appears first on mobile -->
+
+    <!-- Text FIRST in DOM = top on mobile -->
     <div class="hero-text">
       <p class="hero-eyebrow">Welkom in onze praktijk</p>
       <h1>Elke stem verdient <em>aandacht</em></h1>
@@ -60,45 +65,48 @@
         <a href="#contact" class="btn btn-primary">Maak een afspraak</a>
         <a href="#logopedie" class="btn btn-outline">Ontdek ons aanbod</a>
       </div>
-      <!-- Quick contact strip -->
       <div class="hero-contact-strip">
-        <span>📞 <a href="tel:+3252123456">052 12 34 56</a></span>
-        <span>✉️ <a href="/cdn-cgi/l/email-protection#325b5c545d724146575f595e535c591c5057"><span class="__cf_email__" data-cfemail="234a4d454c635057464e484f424d480d4146">[email&#160;protected]</span></a></span>
-        <span>📍 Kerkstraat 12, 9200 Dendermonde</span>
+        <span>&#128222; <a href="tel:+3252123456">052 12 34 56</a></span>
+        <span>&#9993; info&#64;stemklank.be</span>
+        <span>&#128205; Kerkstraat 12, 9200 Dendermonde</span>
       </div>
     </div>
+
+    <!-- Image SECOND = below text on mobile -->
     <div class="hero-image">
-      <!-- Placeholder for hero illustration / photo -->
       <div class="img-placeholder large" aria-label="Illustratie van een logopediesessie">
-        <span>🗣️</span>
+        <div class="placeholder-icon">&#128483;</div>
         <p>Illustratie praktijk</p>
       </div>
     </div>
+
   </div>
 </section>
 
-<!-- Services highlight strip -->
+<!-- Services strip -->
 <section class="services-strip">
   <div class="container services-strip-inner">
     <a href="#logopedie" class="service-card">
-      <div class="service-icon">🎙️</div>
+      <div class="service-icon">&#127897;</div>
       <h3>Logopedie</h3>
       <p>Articulatie, taal, stem, neurologie &amp; meer</p>
     </a>
     <a href="#studiebegeleiding" class="service-card">
-      <div class="service-icon">📚</div>
+      <div class="service-icon">&#128218;</div>
       <h3>Studiebegeleiding</h3>
       <p>Lezen, spelling, rekenen &amp; studietechnieken</p>
     </a>
     <a href="#gebarenstem" class="service-card">
-      <div class="service-icon">👐</div>
+      <div class="service-icon">&#128080;</div>
       <h3>Gebarenstem</h3>
       <p>Gebarentaal voor baby's en jonge kinderen</p>
     </a>
   </div>
 </section>
 
-<!-- ===================== TEAM ===================== -->
+<!-- ======================================================
+     TEAM
+     ====================================================== -->
 <section id="team" class="section bg-light">
   <div class="container">
     <div class="section-header">
@@ -106,45 +114,38 @@
       <h2>Maak kennis met onze <em>logopedisten</em></h2>
       <p class="section-intro">Wij zijn een enthousiast team van gediplomeerde logopedisten en begeleiders. Samen bieden wij een brede expertise aan, steeds vanuit een persoonlijke en betrokken aanpak.</p>
     </div>
-
     <div class="team-grid">
 
-      <!-- Therapist 1 -->
       <article class="team-card">
         <div class="img-placeholder portrait" aria-label="Foto van Lien De Smedt">
-          <span>👩‍⚕️</span>
+          <div class="placeholder-icon">&#128105;</div>
         </div>
         <div class="team-info">
           <h3>Lien De Smedt</h3>
-          <p class="team-role">Logopediste – Spraak &amp; Taal</p>
+          <p class="team-role">Logopediste &ndash; Spraak &amp; Taal</p>
           <p>Lien is gespecialiseerd in articulatieproblemen, taalontwikkelingsstoornissen en stemproblemen bij kinderen. Zij studeerde af aan de Universiteit Gent en volgde bijkomende opleidingen in myofunctionele therapie.</p>
-          <p class="team-contact"><a href="/cdn-cgi/l/email-protection#fd91949893bd8e89989096919c9396d39f98"><span class="__cf_email__" data-cfemail="5f33363a311f2c2b3a3234333e3134713d3a">[email&#160;protected]</span></a></p>
         </div>
       </article>
 
-      <!-- Therapist 2 -->
       <article class="team-card">
         <div class="img-placeholder portrait" aria-label="Foto van Jonas Van Acker">
-          <span>👨‍⚕️</span>
+          <div class="placeholder-icon">&#128104;</div>
         </div>
         <div class="team-info">
           <h3>Jonas Van Acker</h3>
-          <p class="team-role">Logopedist – Neurologie &amp; Volwassenen</p>
+          <p class="team-role">Logopedist &ndash; Neurologie &amp; Volwassenen</p>
           <p>Jonas werkt voornamelijk met volwassenen en ouderen na een beroerte of bij neurodegeneratieve aandoeningen. Hij heeft een bijzondere interesse in slikstoornissen en afasie en volgt regelmatig bijscholingen.</p>
-          <p class="team-contact"><a href="/cdn-cgi/l/email-protection#1e7471707f6d5e6d6a7b7375727f7075307c7b"><span class="__cf_email__" data-cfemail="c5afaaaba4b685b6b1a0a8aea9a4abaeeba7a0">[email&#160;protected]</span></a></p>
         </div>
       </article>
 
-      <!-- Therapist 3 -->
       <article class="team-card">
         <div class="img-placeholder portrait" aria-label="Foto van Sofie Maes">
-          <span>👩‍⚕️</span>
+          <div class="placeholder-icon">&#128105;</div>
         </div>
         <div class="team-info">
           <h3>Sofie Maes</h3>
-          <p class="team-role">Logopediste – Studiebegeleiding &amp; Gebarenstem</p>
-          <p>Sofie begeleidt kinderen met lees- en spellingsproblemen, dyscalculie en leerstoornissen. Daarnaast is zij gecertificeerd instructeur Gebarenstem en geeft zij ouder-kindcursussen in Vlaanderen.</p>
-          <p class="team-contact"><a href="/cdn-cgi/l/email-protection#fd8e929b9498bd8e89989096919c9396d39f98"><span class="__cf_email__" data-cfemail="9deef2fbf4f8ddeee9f8f0f6f1fcf3f6b3fff8">[email&#160;protected]</span></a></p>
+          <p class="team-role">Logopediste &ndash; Studiebegeleiding &amp; Gebarenstem</p>
+          <p>Sofie begeleidt kinderen met lees- en spellingsproblemen, dyscalculie en leerstoornissen. Zij is gecertificeerd instructeur Gebarenstem en geeft ouder-kindcursussen in Vlaanderen.</p>
         </div>
       </article>
 
@@ -152,21 +153,22 @@
   </div>
 </section>
 
-<!-- ===================== LOGOPEDIE ===================== -->
+<!-- ======================================================
+     LOGOPEDIE
+     ====================================================== -->
 <section id="logopedie" class="section">
   <div class="container">
     <div class="section-header">
       <p class="eyebrow">Ons aanbod</p>
       <h2>Logopedie</h2>
-      <p class="section-intro">Logopedie richt zich op de preventie, het onderzoek en de behandeling van communicatiestoornissen. Wij bieden begeleiding voor alle leeftijden – van peuter tot senior.</p>
+      <p class="section-intro">Logopedie richt zich op de preventie, het onderzoek en de behandeling van communicatiestoornissen. Wij bieden begeleiding voor alle leeftijden &ndash; van peuter tot senior.</p>
     </div>
-
     <div class="content-grid">
 
       <div class="content-card">
-        <div class="content-icon">🗣️</div>
+        <div class="content-icon">&#128483;</div>
         <h3>Articulatie &amp; Uitspraak</h3>
-        <p>Sommige kinderen of volwassenen spreken bepaalde klanken niet correct uit. Dit kan de verstaanbaarheid bemoeilijken of sociaal ongemak veroorzaken. Wij analyseren het klankpatroon en stellen een gepast oefenprogramma op, afgestemd op de leeftijd en noden van de cliënt.</p>
+        <p>Sommige kinderen of volwassenen spreken bepaalde klanken niet correct uit. Dit kan de verstaanbaarheid bemoeilijken of sociaal ongemak veroorzaken. Wij analyseren het klankpatroon en stellen een gepast oefenprogramma op.</p>
         <ul>
           <li>Klankstoornissen bij kinderen</li>
           <li>Dysartrie (motorische spraakstoornis)</li>
@@ -176,21 +178,21 @@
       </div>
 
       <div class="content-card">
-        <div class="content-icon">💬</div>
-        <h3>Taal­ontwikkeling</h3>
-        <p>Taal is de basis van leren, denken en communiceren. Wanneer de taalontwikkeling achterblijft of anders verloopt, kan een logopedist helpen. Wij werken zowel aan taalproductie als taalbegrip, zowel mondeling als schriftelijk.</p>
+        <div class="content-icon">&#128172;</div>
+        <h3>Taalontwikkeling</h3>
+        <p>Taal is de basis van leren, denken en communiceren. Wanneer de taalontwikkeling achterblijft of anders verloopt, kan een logopedist helpen. Wij werken zowel aan taalproductie als taalbegrip.</p>
         <ul>
           <li>Taalontwikkelingsstoornissen (TOS)</li>
-          <li>Woordenschat­vertraging</li>
+          <li>Woordenschatvertraging</li>
           <li>Grammaticale moeilijkheden</li>
           <li>Meertaligheid en taaloverdracht</li>
         </ul>
       </div>
 
       <div class="content-card">
-        <div class="content-icon">🎵</div>
+        <div class="content-icon">&#127925;</div>
         <h3>Stemtherapie</h3>
-        <p>Stemklachten kunnen iedereen treffen: van leraren en zangers tot mensen die na een infectie hun stem niet meer goed terugvinden. Wij combineren stemhygiëne-advies met gerichte oefeningen om de stem functioneel en aangenaam te maken.</p>
+        <p>Stemklachten kunnen iedereen treffen: van leraren en zangers tot mensen die hun stem niet meer goed terugvinden. Wij combineren stemhygiene-advies met gerichte oefeningen om de stem functioneel te maken.</p>
         <ul>
           <li>Heesheid, stemstoornissen</li>
           <li>Functionele stemklachten</li>
@@ -200,9 +202,9 @@
       </div>
 
       <div class="content-card">
-        <div class="content-icon">🧠</div>
+        <div class="content-icon">&#129504;</div>
         <h3>Neurologische Revalidatie</h3>
-        <p>Na een beroerte, hersenletsel of bij een neurodegeneratieve aandoening kunnen spraak, taal en/of slikken aangetast zijn. Onze logopedist biedt gespecialiseerde begeleiding, in nauwe samenwerking met het multidisciplinaire team.</p>
+        <p>Na een beroerte, hersenletsel of bij een neurodegeneratieve aandoening kunnen spraak, taal en/of slikken aangetast zijn. Onze logopedist biedt gespecialiseerde begeleiding.</p>
         <ul>
           <li>Afasie (taalstoornis na beroerte)</li>
           <li>Slikstoornissen (dysfagie)</li>
@@ -212,9 +214,9 @@
       </div>
 
       <div class="content-card">
-        <div class="content-icon">😮</div>
+        <div class="content-icon">&#128514;</div>
         <h3>Myofunctionele Therapie</h3>
-        <p>Myofunctionele therapie richt zich op de spieren van de mond, het gezicht en de keel. Het behandelt orale gewoonten die invloed hebben op de kaak, tanden en spraak, zoals duimzuigen, mondademen of een verkeerde tongpositie.</p>
+        <p>Myofunctionele therapie richt zich op de spieren van de mond, het gezicht en de keel. Het behandelt orale gewoonten die invloed hebben op de kaak, tanden en spraak.</p>
         <ul>
           <li>Tongstoters / tongperser</li>
           <li>Mondademhaling</li>
@@ -224,9 +226,9 @@
       </div>
 
       <div class="content-card">
-        <div class="content-icon">👶</div>
+        <div class="content-icon">&#128118;</div>
         <h3>Vroeginterventie</h3>
-        <p>Vroeg ingrijpen maakt een groot verschil. Bij jonge kinderen die later beginnen te praten of moeilijk verstaanbaar zijn, zoeken wij samen met ouders naar de beste aanpak. Spel staat centraal in onze sessies met de allerkleinsten.</p>
+        <p>Vroeg ingrijpen maakt een groot verschil. Bij jonge kinderen die later beginnen te praten of moeilijk verstaanbaar zijn, zoeken wij samen met ouders naar de beste aanpak. Spel staat centraal.</p>
         <ul>
           <li>Spraak- en taalstimulering</li>
           <li>Communicatie bij ASS</li>
@@ -236,7 +238,6 @@
       </div>
 
     </div>
-
     <div class="section-cta">
       <p>Twijfelt u of logopedie iets voor u of uw kind kan betekenen? Neem gerust contact op voor een vrijblijvend gesprek.</p>
       <a href="#contact" class="btn btn-primary">Neem contact op</a>
@@ -244,13 +245,15 @@
   </div>
 </section>
 
-<!-- ===================== STUDIEBEGELEIDING ===================== -->
+<!-- ======================================================
+     STUDIEBEGELEIDING
+     ====================================================== -->
 <section id="studiebegeleiding" class="section bg-teal">
   <div class="container">
     <div class="two-col">
       <div class="two-col-image">
         <div class="img-placeholder medium" aria-label="Kind aan het lezen met begeleider">
-          <span>📖</span>
+          <div class="placeholder-icon">&#128214;</div>
           <p>Begeleiding op maat</p>
         </div>
       </div>
@@ -259,35 +262,34 @@
         <h2>Studiebegeleiding</h2>
         <p>Heeft uw kind moeite met lezen, spellen of rekenen? Of loopt het vast door een ongestructureerde studieaanpak? Wij bieden individuele studiebegeleiding voor kinderen, tieners en volwassenen die extra ondersteuning nodig hebben bij het leren.</p>
         <p>Onze begeleiding vertrekt steeds vanuit een grondige evaluatie. Op basis daarvan stellen wij een persoonlijk begeleidingsplan op, in samenspraak met ouders en school indien gewenst.</p>
-
         <h3>Wat bieden wij aan?</h3>
         <div class="tag-list">
           <span class="tag">Dyslexie</span>
           <span class="tag">Dyscalculie</span>
           <span class="tag">Dysorthografie</span>
-          <span class="tag">Leerstrategie&shy;training</span>
+          <span class="tag">Leerstrategietraining</span>
           <span class="tag">Plannen &amp; organiseren</span>
-          <span class="tag">Geheugen­technieken</span>
-          <span class="tag">Concentratie­verbetering</span>
+          <span class="tag">Geheugentechnieken</span>
+          <span class="tag">Concentratieverbetering</span>
           <span class="tag">Leesbegrip</span>
         </div>
-
         <h3>Voor wie?</h3>
-        <p>Onze studiebegeleiding is bedoeld voor leerlingen van het basis- en secundair onderwijs, maar ook jongvolwassenen in het hoger onderwijs zijn welkom. Samen zoeken wij naar strategieën die passen bij uw leerstijl en tempo.</p>
-
+        <p>Onze studiebegeleiding is bedoeld voor leerlingen van het basis- en secundair onderwijs, maar ook jongvolwassenen in het hoger onderwijs zijn welkom. Samen zoeken wij naar strategieen die passen bij uw leerstijl en tempo.</p>
         <a href="#contact" class="btn btn-primary">Meer informatie aanvragen</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===================== GEBARENSTEM ===================== -->
+<!-- ======================================================
+     GEBARENSTEM
+     ====================================================== -->
 <section id="gebarenstem" class="section">
   <div class="container">
     <div class="two-col reverse">
       <div class="two-col-image">
         <div class="img-placeholder medium" aria-label="Ouder en baby communiceren via gebaren">
-          <span>👐</span>
+          <div class="placeholder-icon">&#128080;</div>
           <p>Baby gebaren</p>
         </div>
       </div>
@@ -295,89 +297,85 @@
         <p class="eyebrow">Communicatie voor de allerkleinsten</p>
         <h2>Baby &amp; Kind Gebarenstem</h2>
         <p>Baby's begrijpen veel meer dan ze kunnen zeggen. Met <strong>Gebarenstem</strong> leren ouders en kinderen eenvoudige gebaren gebruiken om te communiceren nog voordat het kind kan spreken. Dit vermindert frustratie, versterkt de band en stimuleert de taalontwikkeling.</p>
-        <p>Gebarenstem is <em>geen</em> vervanging voor gesproken taal – het is een brug die communicatie vloeiender maakt in de periode vóór de spraak goed op gang komt.</p>
-
+        <p>Gebarenstem is <em>geen</em> vervanging voor gesproken taal &ndash; het is een brug die communicatie vloeiender maakt in de periode voor de spraak goed op gang komt.</p>
         <h3>Voordelen van Gebarenstem</h3>
         <ul class="benefit-list">
-          <li>✅ Minder huilbuien en frustratie</li>
-          <li>✅ Stimuleert vroege taalontwikkeling</li>
-          <li>✅ Versterkt de ouder-kindbinding</li>
-          <li>✅ Eenvoudig te leren in dagelijkse situaties</li>
-          <li>✅ Ondersteunt kinderen met communicatieproblemen</li>
-          <li>✅ Wetenschappelijk onderbouwd</li>
+          <li>&#10003; Minder huilbuien en frustratie</li>
+          <li>&#10003; Stimuleert vroege taalontwikkeling</li>
+          <li>&#10003; Versterkt de ouder-kindbinding</li>
+          <li>&#10003; Eenvoudig te leren in dagelijkse situaties</li>
+          <li>&#10003; Ondersteunt kinderen met communicatieproblemen</li>
+          <li>&#10003; Wetenschappelijk onderbouwd</li>
         </ul>
-
         <h3>Cursussen voor ouders</h3>
-        <p>Sofie Maes biedt regelmatig ouder-kindcursussen Gebarenstem aan, zowel in groep als individueel. Neem contact op voor de eerstvolgende cursusdata of voor een privésessie op maat.</p>
-
+        <p>Sofie Maes biedt regelmatig ouder-kindcursussen Gebarenstem aan, zowel in groep als individueel. Neem contact op voor de eerstvolgende cursusdata of voor een privesessie op maat.</p>
         <a href="#contact" class="btn btn-primary">Cursusdata opvragen</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===================== WERKING ===================== -->
+<!-- ======================================================
+     WERKING
+     ====================================================== -->
 <section id="werking" class="section bg-light">
   <div class="container">
     <div class="section-header">
       <p class="eyebrow">Hoe werken wij?</p>
       <h2>Werking van de praktijk</h2>
-      <p class="section-intro">Van de eerste vraag tot het einde van de therapie – wij begeleiden u stap voor stap op een transparante, gestructureerde manier.</p>
+      <p class="section-intro">Van de eerste vraag tot het einde van de therapie &ndash; wij begeleiden u stap voor stap op een transparante, gestructureerde manier.</p>
     </div>
 
-    <!-- Process steps -->
     <div class="steps">
       <div class="step">
         <div class="step-number">01</div>
         <h3>Intake &amp; Aanmelding</h3>
-        <p>U neemt contact op via telefoon, e-mail of het contactformulier. Wij plannen een eerste intakegesprek in waarbij we uw vragen en verwachtingen bespreken. Bij kinderen zijn ouders steeds welkom en betrokken bij dit gesprek.</p>
+        <p>U neemt contact op via telefoon, e-mail of het contactformulier. Wij plannen een eerste intakegesprek in waarbij we uw vragen en verwachtingen bespreken.</p>
       </div>
-      <div class="step-arrow">→</div>
+      <div class="step-arrow">&rarr;</div>
       <div class="step">
         <div class="step-number">02</div>
         <h3>Onderzoek &amp; Analyse</h3>
-        <p>In de eerste sessie(s) voeren wij een grondig onderzoek uit met gestandaardiseerde en informele testen. Op basis hiervan stellen wij een duidelijk beeld op van de noden en stellen wij doelen voor de therapie.</p>
+        <p>In de eerste sessie(s) voeren wij een grondig onderzoek uit. Op basis hiervan stellen wij een duidelijk beeld op van de noden en doelen voor de therapie.</p>
       </div>
-      <div class="step-arrow">→</div>
+      <div class="step-arrow">&rarr;</div>
       <div class="step">
         <div class="step-number">03</div>
         <h3>Therapie op maat</h3>
-        <p>De therapie wordt afgestemd op uw specifieke noden. Sessies duren doorgaans 45 minuten en vinden wekelijks of tweewekelijks plaats. Thuis-oefeningen en adviezen voor de omgeving maken deel uit van de begeleiding.</p>
+        <p>De therapie wordt afgestemd op uw specifieke noden. Sessies duren doorgaans 45 minuten en vinden wekelijks of tweewekelijks plaats.</p>
       </div>
-      <div class="step-arrow">→</div>
+      <div class="step-arrow">&rarr;</div>
       <div class="step">
         <div class="step-number">04</div>
         <h3>Evaluatie &amp; Afronding</h3>
-        <p>We evalueren regelmatig de vooruitgang en passen de doelen aan waar nodig. De therapie wordt afgerond wanneer de doelstellingen bereikt zijn of wanneer een doorverwijzing aangewezen is.</p>
+        <p>We evalueren regelmatig de vooruitgang en passen de doelen aan waar nodig. De therapie wordt afgerond wanneer de doelstellingen bereikt zijn.</p>
       </div>
     </div>
 
-    <!-- Practical info -->
     <div class="practical-grid">
       <div class="practical-card">
-        <h3>💶 Tarieven</h3>
-        <p>Een individuele logopediesessie van 45 minuten kost <strong>€ 50</strong>. Een intakegesprek + onderzoek wordt separaat gefactureerd. Wij bezorgen u steeds een gedetailleerde factuur.</p>
-        <p>Vraag naar ons tariefoverzicht voor studiebegeleiding en Gebarenstemcursussen.</p>
+        <h3>&#128182; Tarieven</h3>
+        <p>Een individuele logopediesessie van 45 minuten kost <strong>50 euro</strong>. Een intakegesprek en onderzoek wordt separaat gefactureerd. Wij bezorgen u steeds een gedetailleerde factuur.</p>
       </div>
       <div class="practical-card">
-        <h3>🏥 Terugbetaling</h3>
-        <p>Logopedie wordt gedeeltelijk terugbetaald door het ziekenfonds, mits u beschikt over een geldig voorschrift van een arts of specialist. Het terugbetalingsbedrag is afhankelijk van uw mutualiteit en statuut.</p>
-        <p>Raadpleeg uw ziekenfonds voor de exacte bedragen en eventuele maximumfactuur.</p>
+        <h3>&#127973; Terugbetaling</h3>
+        <p>Logopedie wordt gedeeltelijk terugbetaald door het ziekenfonds, mits u beschikt over een geldig voorschrift van een arts of specialist. Raadpleeg uw ziekenfonds voor de exacte bedragen.</p>
       </div>
       <div class="practical-card">
-        <h3>💻 Online therapie</h3>
+        <h3>&#128187; Online therapie</h3>
         <p>Wanneer aanwezig komen niet mogelijk is, bieden wij ook <strong>teletherapie</strong> aan via een beveiligd videoplatform. Dit kan een volwaardig alternatief zijn voor de meeste logopedische doelstellingen.</p>
-        <p>Neem contact op om de mogelijkheden te bespreken.</p>
       </div>
       <div class="practical-card">
-        <h3>📋 Doorverwijzing</h3>
-        <p>Voor terugbetaling heeft u een voorschrift nodig van uw huisarts, kinderarts, neus-keel-oorarts of andere specialist. Wij werken nauw samen met andere zorgverleners en scholen om een integrale aanpak te garanderen.</p>
+        <h3>&#128203; Doorverwijzing</h3>
+        <p>Voor terugbetaling heeft u een voorschrift nodig van uw huisarts, kinderarts, neus-keel-oorarts of andere specialist. Wij werken nauw samen met andere zorgverleners en scholen.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===================== CONTACT ===================== -->
+<!-- ======================================================
+     CONTACT
+     ====================================================== -->
 <section id="contact" class="section bg-teal-dark">
   <div class="container">
     <div class="section-header light">
@@ -388,95 +386,101 @@
 
     <div class="contact-grid">
 
-      <!-- Contact info -->
+      <!-- Info column -->
       <div class="contact-info">
         <h3>Praktijkgegevens</h3>
         <ul class="contact-list">
           <li>
-            <span class="contact-icon">📍</span>
-            <div>
-              <strong>Adres</strong><br />
-              Kerkstraat 12<br />
-              9200 Dendermonde
-            </div>
+            <span class="contact-icon">&#128205;</span>
+            <div><strong>Adres</strong><br />Kerkstraat 12<br />9200 Dendermonde</div>
           </li>
           <li>
-            <span class="contact-icon">📞</span>
-            <div>
-              <strong>Telefoon</strong><br />
-              <a href="tel:+3252123456">052 12 34 56</a>
-            </div>
+            <span class="contact-icon">&#128222;</span>
+            <div><strong>Telefoon</strong><br /><a href="tel:+3252123456">052 12 34 56</a></div>
           </li>
           <li>
-            <span class="contact-icon">✉️</span>
-            <div>
-              <strong>E-mail</strong><br />
-              <a href="/cdn-cgi/l/email-protection#8ae3e4ece5caf9feefe7e1e6ebe4e1a4e8ef"><span class="__cf_email__" data-cfemail="731a1d151c330007161e181f121d185d1116">[email&#160;protected]</span></a>
-            </div>
+            <span class="contact-icon">&#9993;</span>
+            <div><strong>E-mail</strong><br />info&#64;stemklank.be</div>
           </li>
           <li>
-            <span class="contact-icon">🕐</span>
+            <span class="contact-icon">&#128336;</span>
             <div>
               <strong>Openingsuren</strong><br />
-              Maandag – Vrijdag: 8u – 19u<br />
-              Zaterdag: 9u – 13u<br />
+              Maandag &ndash; Vrijdag: 8u &ndash; 19u<br />
+              Zaterdag: 9u &ndash; 13u<br />
               Zondag: gesloten
             </div>
           </li>
         </ul>
-
-        <!-- Map placeholder -->
-        <div class="map-placeholder" aria-label="Kaartplaceholder – locatie Kerkstraat 12, Dendermonde">
-          <span>🗺️</span>
+        <div class="map-placeholder" aria-label="Kaartplaceholder locatie Kerkstraat 12 Dendermonde">
+          <div class="placeholder-icon">&#128506;</div>
           <p>Kaart wordt hier weergegeven</p>
-          <small>(Voeg een Google Maps embed in)</small>
+          <small>Voeg een Google Maps embed in</small>
         </div>
-
-        <!-- Social media -->
         <div class="social-links">
           <a href="#" aria-label="Facebook" class="social-btn">f</a>
-          <a href="#" aria-label="Instagram" class="social-btn">in</a>
-          <a href="#" aria-label="LinkedIn" class="social-btn">li</a>
+          <a href="#" aria-label="Instagram" class="social-btn">ig</a>
+          <a href="#" aria-label="LinkedIn" class="social-btn">in</a>
         </div>
       </div>
 
-      <!-- Contact form -->
+      <!-- Form column
+           ─────────────────────────────────────────────────
+           Uses Formspree for free static form submission.
+           To activate:
+           1. Go to https://formspree.io and sign up (free)
+           2. Create a new form → enter cschreuer@hotmail.com
+           3. Verify your email
+           4. Copy your Form ID (looks like: xpwzgkqr)
+           5. Replace YOUR_FORM_ID below with that ID
+           ───────────────────────────────────────────────── -->
       <div class="contact-form-wrap">
         <h3>Stuur ons een bericht</h3>
-        <!-- Static hosting: form uses mailto. For a real backend, replace with Formspree endpoint -->
-        <form class="contact-form" action="mailto:info@stemklank.be" method="get" enctype="text/plain" aria-label="Contactformulier">
+
+        <div id="form-success" class="form-success" style="display:none">
+          <p>&#10003; Uw bericht is verzonden! Wij nemen zo snel mogelijk contact met u op.</p>
+        </div>
+
+        <form
+          id="contactForm"
+          class="contact-form"
+          action="https://formspree.io/f/xpqjyrlr"
+          method="POST"
+        >
+          <input type="hidden" name="_subject" value="Nieuw bericht via stemklank.be" />
+
           <div class="form-group">
-            <label for="name">Naam *</label>
-            <input type="text" id="name" name="name" placeholder="Uw volledige naam" required />
+            <label for="f-name">Naam *</label>
+            <input type="text" id="f-name" name="name" placeholder="Uw volledige naam" required />
           </div>
           <div class="form-group">
-            <label for="email">E-mailadres *</label>
-            <input type="email" id="email" name="email" placeholder="uw@email.be" required />
+            <label for="f-email">E-mailadres *</label>
+            <input type="email" id="f-email" name="email" placeholder="uw@email.be" required />
           </div>
           <div class="form-group">
-            <label for="phone">Telefoonnummer</label>
-            <input type="tel" id="phone" name="phone" placeholder="0472 00 00 00" />
+            <label for="f-phone">Telefoonnummer</label>
+            <input type="tel" id="f-phone" name="phone" placeholder="0472 00 00 00" />
           </div>
           <div class="form-group">
-            <label for="subject">Onderwerp</label>
-            <select id="subject" name="subject">
+            <label for="f-subject">Onderwerp</label>
+            <select id="f-subject" name="subject">
               <option value="">-- Kies een onderwerp --</option>
-              <option value="logopedie">Logopedie</option>
-              <option value="studiebegeleiding">Studiebegeleiding</option>
-              <option value="gebarenstem">Gebarenstem</option>
-              <option value="afspraak">Afspraak maken</option>
-              <option value="andere">Andere vraag</option>
+              <option>Logopedie</option>
+              <option>Studiebegeleiding</option>
+              <option>Gebarenstem</option>
+              <option>Afspraak maken</option>
+              <option>Andere vraag</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="message">Bericht *</label>
-            <textarea id="message" name="message" rows="5" placeholder="Schrijf hier uw vraag of bericht..." required></textarea>
+            <label for="f-message">Bericht *</label>
+            <textarea id="f-message" name="message" rows="5" placeholder="Schrijf hier uw vraag of bericht..." required></textarea>
           </div>
           <div class="form-group form-check">
-            <input type="checkbox" id="privacy" name="privacy" required />
-            <label for="privacy">Ik ga akkoord met de <a href="#privacy-policy">privacyverklaring</a> *</label>
+            <input type="checkbox" id="f-privacy" name="privacy" required />
+            <label for="f-privacy">Ik ga akkoord met de <a href="#privacy-policy">privacyverklaring</a> *</label>
           </div>
-          <button type="submit" class="btn btn-primary">Verstuur bericht</button>
+          <button type="submit" id="submitBtn" class="btn btn-primary">Verstuur bericht</button>
         </form>
       </div>
 
@@ -486,44 +490,42 @@
 
 </main>
 
-<!-- ===================== PRIVACY POLICY ===================== -->
+<!-- ======================================================
+     PRIVACY POLICY
+     ====================================================== -->
 <section id="privacy-policy" class="section bg-light">
-  <div class="container" style="max-width: 800px;">
-    <div class="section-header" style="text-align:left; max-width:100%;">
+  <div class="container privacy-container">
+    <div class="section-header" style="text-align:left;max-width:100%;margin-bottom:2rem">
       <p class="eyebrow">Juridisch</p>
       <h2>Privacyverklaring</h2>
     </div>
     <div class="privacy-content">
       <h3>1. Verantwoordelijke voor de verwerking</h3>
-      <p>Praktijk Stem &amp; Klank, Kerkstraat 12, 9200 Dendermonde. E-mail: <a href="mailto:info@stemklank.be">info@stemklank.be</a> — Telefoon: 052 12 34 56.</p>
-
+      <p>Praktijk Stem &amp; Klank, Kerkstraat 12, 9200 Dendermonde. Telefoon: 052 12 34 56.</p>
       <h3>2. Welke gegevens verzamelen wij?</h3>
       <p>Via het contactformulier verwerken wij uitsluitend de gegevens die u zelf invult: naam, e-mailadres, telefoonnummer en uw bericht. Wij verzamelen geen gevoelige medische informatie via de website.</p>
-
       <h3>3. Waarvoor gebruiken wij uw gegevens?</h3>
-      <p>Uw gegevens worden uitsluitend gebruikt om uw vraag te beantwoorden of een afspraak in te plannen. Wij delen uw gegevens nooit met derden voor commerciële doeleinden.</p>
-
+      <p>Uw gegevens worden uitsluitend gebruikt om uw vraag te beantwoorden of een afspraak in te plannen. Wij delen uw gegevens nooit met derden voor commerciele doeleinden.</p>
       <h3>4. Bewaartermijn</h3>
-      <p>Contactgegevens worden bewaard zolang als nodig om uw vraag te behandelen, en maximaal 1 jaar nadien, tenzij een therapeutische relatie tot stand komt waarbij de wettelijke bewaartermijnen voor medische dossiers gelden (30 jaar voor minderjarigen, tot 30 jaar na de meerderjarigheid).</p>
-
+      <p>Contactgegevens worden bewaard zolang als nodig om uw vraag te behandelen, en maximaal 1 jaar nadien, tenzij een therapeutische relatie tot stand komt waarbij de wettelijke bewaartermijnen voor medische dossiers gelden.</p>
       <h3>5. Uw rechten</h3>
-      <p>U heeft het recht op inzage, correctie, verwijdering en overdraagbaarheid van uw persoonsgegevens. U kunt hiervoor contact opnemen via <a href="mailto:info@stemklank.be">info@stemklank.be</a>. U heeft ook het recht een klacht in te dienen bij de <a href="https://www.gegevensbeschermingsautoriteit.be" target="_blank" rel="noopener">Gegevensbeschermingsautoriteit</a>.</p>
-
+      <p>U heeft het recht op inzage, correctie, verwijdering en overdraagbaarheid van uw persoonsgegevens. U heeft ook het recht een klacht in te dienen bij de <a href="https://www.gegevensbeschermingsautoriteit.be" target="_blank" rel="noopener">Gegevensbeschermingsautoriteit</a>.</p>
       <h3>6. Cookies</h3>
       <p>Deze website maakt geen gebruik van tracking- of analytische cookies. Er worden geen externe statistieken bijgehouden.</p>
-
-      <p style="margin-top:2rem; font-size:0.85rem; color: var(--clr-text-light);">Laatste wijziging: januari 2024</p>
+      <p class="privacy-date">Laatste wijziging: januari 2024</p>
     </div>
   </div>
 </section>
 
-<!-- ===================== FOOTER ===================== -->
+<!-- ======================================================
+     FOOTER
+     ====================================================== -->
 <footer class="site-footer">
   <div class="container footer-inner">
     <div class="footer-brand">
       <div class="logo-mark small">S&amp;K</div>
       <p class="footer-tagline">Elke stem verdient aandacht.</p>
-      <p>Praktijk Stem &amp; Klank<br />Kerkstraat 12, 9200 Dendermonde<br /><a href="tel:+3252123456">052 12 34 56</a> · <a href="/cdn-cgi/l/email-protection#660f080009261512030b0d0a07080d480403"><span class="__cf_email__" data-cfemail="a4cdcac2cbe4d7d0c1c9cfc8c5cacf8ac6c1">[email&#160;protected]</span></a></p>
+      <p>Praktijk Stem &amp; Klank<br />Kerkstraat 12, 9200 Dendermonde<br /><a href="tel:+3252123456">052 12 34 56</a></p>
     </div>
     <div class="footer-nav">
       <h4>Navigatie</h4>
@@ -555,30 +557,111 @@
         <li><a href="#werking">Terugbetaling</a></li>
         <li><a href="#werking">Online therapie</a></li>
         <li><a href="#privacy-policy">Privacyverklaring</a></li>
-        <li><a href="#">Klachtenbeleid</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
     <div class="container">
-      <p>© 2024 Praktijk Stem &amp; Klank · Alle rechten voorbehouden · Erkenningsnummer: L-12345</p>
-      <p>Ontworpen met ❤️ in Dendermonde</p>
+      <p>&copy; 2024 Praktijk Stem &amp; Klank &middot; Alle rechten voorbehouden</p>
+      <p>Ontworpen met liefde in Dendermonde</p>
     </div>
   </div>
 </footer>
 
-<!-- Back to top button -->
-<a href="#top" class="back-to-top" aria-label="Terug naar boven">↑</a>
+<a href="#top" class="back-to-top" id="backToTop" aria-label="Terug naar boven">&uarr;</a>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-  // Mobile nav toggle
-  const toggle = document.querySelector('.nav-toggle');
-  const nav = document.querySelector('.main-nav');
-  toggle.addEventListener('click', () => {
-    const open = toggle.getAttribute('aria-expanded') === 'true';
-    toggle.setAttribute('aria-expanded', String(!open));
-    nav.classList.toggle('open');
-    toggle.classList.toggle('active');
+<!-- ======================================================
+     JAVASCRIPT
+     No external dependencies. All vanilla JS.
+     ====================================================== -->
+<script>
+(function () {
+  'use strict';
+
+  /* ── Hamburger menu ──────────────────────────────── */
+  var toggle = document.getElementById('navToggle');
+  var nav    = document.getElementById('mainNav');
+
+  function closeNav() {
+    nav.classList.remove('open');
+    toggle.classList.remove('active');
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+
+  toggle.addEventListener('click', function () {
+    var willOpen = !nav.classList.contains('open');
+    if (willOpen) {
+      nav.classList.add('open');
+      toggle.classList.add('active');
+      toggle.setAttribute('aria-expanded', 'true');
+    } else {
+      closeNav();
+    }
   });
 
-  // Close nav on link
+  /* Close on any nav link click */
+  nav.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', closeNav);
+  });
+
+  /* ── Scroll effects ──────────────────────────────── */
+  var header    = document.querySelector('header');
+  var backToTop = document.getElementById('backToTop');
+
+  window.addEventListener('scroll', function () {
+    header.classList.toggle('scrolled', window.scrollY > 40);
+    backToTop.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+
+  /* ── Smooth scroll ───────────────────────────────── */
+  document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      var id = a.getAttribute('href');
+      if (id === '#') return;
+      var target = document.querySelector(id);
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  /* ── Contact form: AJAX via Formspree ────────────────
+     Sends to cschreuer@hotmail.com (configured in Formspree).
+     Replace YOUR_FORM_ID in the form action with your real ID.
+  ─────────────────────────────────────────────────────── */
+  var form       = document.getElementById('contactForm');
+  var successMsg = document.getElementById('form-success');
+  var submitBtn  = document.getElementById('submitBtn');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    submitBtn.textContent = 'Bezig met verzenden...';
+    submitBtn.disabled    = true;
+
+    fetch(form.action, {
+      method:  'POST',
+      body:    new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    })
+    .then(function (res) {
+      if (res.ok) {
+        form.style.display        = 'none';
+        successMsg.style.display  = 'block';
+      } else {
+        submitBtn.textContent = 'Er ging iets mis. Probeer opnieuw.';
+        submitBtn.disabled    = false;
+      }
+    })
+    .catch(function () {
+      submitBtn.textContent = 'Er ging iets mis. Probeer opnieuw.';
+      submitBtn.disabled    = false;
+    });
+  });
+
+}());
+</script>
+
+</body>
+</html>
