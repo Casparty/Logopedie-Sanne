@@ -7,8 +7,11 @@
   <meta name="description" content="Praktijk Stem &amp; Klank biedt logopedie en studiebegeleiding in een warme, professionele omgeving." />
   <meta name="keywords" content="logopedie, spraaktherapie, studiebegeleiding, stem therapie, articulatie, taaltherapie, Dendermonde" />
   <link rel="stylesheet" href="style.css" />
+  <!-- Fonts: loaded async to avoid render blocking -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@400;500;600&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@400;500;600&display=swap" /></noscript>
 </head>
 <body>
 
@@ -345,7 +348,7 @@
           </div>
         </div>
 
-        <!-- Map: static Google Maps image, click opens Google Maps -->
+        <!-- Map: free iframe embed, no API key needed, click opens Google Maps -->
         <a
           href="https://maps.google.com/?q=Kerkstraat+12,+9200+Dendermonde"
           target="_blank"
@@ -353,12 +356,15 @@
           class="map-link"
           aria-label="Open locatie in Google Maps"
         >
-          <img
-            src="https://maps.googleapis.com/maps/api/staticmap?center=Kerkstraat+12,+9200+Dendermonde,Belgium&zoom=15&size=600x280&maptype=roadmap&markers=color:0x4a9b8e%7CKerkstraat+12,+9200+Dendermonde,Belgium&style=feature:poi|visibility:off&key=AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY"
-            alt="Kaart met locatie Kerkstraat 12, Dendermonde"
-            class="map-img"
-            onerror="this.parentElement.classList.add('map-fallback'); this.style.display='none'; this.parentElement.innerHTML += '<div class=\'map-fallback-inner\'><div class=\'ph-icon\'>&#128506;</div><p>Kerkstraat 12<br>9200 Dendermonde</p><small>Klik om te openen in Google Maps</small></div>'"
-          />
+          <iframe
+            class="map-iframe"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Kerkstraat+12,+9200+Dendermonde,+Belgium&output=embed&z=15"
+            title="Locatie Praktijk Stem en Klank"
+            style="pointer-events:none"
+          ></iframe>
+          <div class="map-overlay">&#128205; Open in Google Maps</div>
         </a>
 
         <div class="social-links">
