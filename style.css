@@ -823,6 +823,17 @@ h1 { margin-bottom: 1.2rem; }
 }
 .footer-bottom p { font-size: 0.8rem; color: rgba(255,255,255,0.4); }
 
+/* Privacy policy content */
+.privacy-content h3 {
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
+}
+.privacy-content p {
+  font-size: 0.93rem;
+  color: var(--clr-text-light);
+}
+
 /* ============================================================
    BACK TO TOP
    ============================================================ */
@@ -861,7 +872,9 @@ h1 { margin-bottom: 1.2rem; }
    ============================================================ */
 @media (max-width: 960px) {
   .hero-content { grid-template-columns: 1fr; }
-  .hero-image   { order: -1; max-width: 500px; margin: 0 auto; }
+  /* On mobile, image placeholder goes BELOW the text */
+  .hero-image   { order: 1; max-width: 500px; margin: 0 auto; }
+  .hero-text    { order: 0; }
   .hero-lead    { max-width: 100%; }
 
   .services-strip-inner { grid-template-columns: 1fr; }

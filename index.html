@@ -51,6 +51,7 @@
 <section id="home" class="section hero">
   <div class="hero-bg-shape"></div>
   <div class="container hero-content">
+    <!-- hero-text comes first in DOM so it appears first on mobile -->
     <div class="hero-text">
       <p class="hero-eyebrow">Welkom in onze praktijk</p>
       <h1>Elke stem verdient <em>aandacht</em></h1>
@@ -62,7 +63,7 @@
       <!-- Quick contact strip -->
       <div class="hero-contact-strip">
         <span>📞 <a href="tel:+3252123456">052 12 34 56</a></span>
-        <span>✉️ <a href="mailto:info@stemklank.be">info@stemklank.be</a></span>
+        <span>✉️ <a href="/cdn-cgi/l/email-protection#325b5c545d724146575f595e535c591c5057"><span class="__cf_email__" data-cfemail="234a4d454c635057464e484f424d480d4146">[email&#160;protected]</span></a></span>
         <span>📍 Kerkstraat 12, 9200 Dendermonde</span>
       </div>
     </div>
@@ -117,7 +118,7 @@
           <h3>Lien De Smedt</h3>
           <p class="team-role">Logopediste – Spraak &amp; Taal</p>
           <p>Lien is gespecialiseerd in articulatieproblemen, taalontwikkelingsstoornissen en stemproblemen bij kinderen. Zij studeerde af aan de Universiteit Gent en volgde bijkomende opleidingen in myofunctionele therapie.</p>
-          <p class="team-contact"><a href="mailto:lien@stemklank.be">lien@stemklank.be</a></p>
+          <p class="team-contact"><a href="/cdn-cgi/l/email-protection#fd91949893bd8e89989096919c9396d39f98"><span class="__cf_email__" data-cfemail="5f33363a311f2c2b3a3234333e3134713d3a">[email&#160;protected]</span></a></p>
         </div>
       </article>
 
@@ -130,7 +131,7 @@
           <h3>Jonas Van Acker</h3>
           <p class="team-role">Logopedist – Neurologie &amp; Volwassenen</p>
           <p>Jonas werkt voornamelijk met volwassenen en ouderen na een beroerte of bij neurodegeneratieve aandoeningen. Hij heeft een bijzondere interesse in slikstoornissen en afasie en volgt regelmatig bijscholingen.</p>
-          <p class="team-contact"><a href="mailto:jonas@stemklank.be">jonas@stemklank.be</a></p>
+          <p class="team-contact"><a href="/cdn-cgi/l/email-protection#1e7471707f6d5e6d6a7b7375727f7075307c7b"><span class="__cf_email__" data-cfemail="c5afaaaba4b685b6b1a0a8aea9a4abaeeba7a0">[email&#160;protected]</span></a></p>
         </div>
       </article>
 
@@ -143,7 +144,7 @@
           <h3>Sofie Maes</h3>
           <p class="team-role">Logopediste – Studiebegeleiding &amp; Gebarenstem</p>
           <p>Sofie begeleidt kinderen met lees- en spellingsproblemen, dyscalculie en leerstoornissen. Daarnaast is zij gecertificeerd instructeur Gebarenstem en geeft zij ouder-kindcursussen in Vlaanderen.</p>
-          <p class="team-contact"><a href="mailto:sofie@stemklank.be">sofie@stemklank.be</a></p>
+          <p class="team-contact"><a href="/cdn-cgi/l/email-protection#fd8e929b9498bd8e89989096919c9396d39f98"><span class="__cf_email__" data-cfemail="9deef2fbf4f8ddeee9f8f0f6f1fcf3f6b3fff8">[email&#160;protected]</span></a></p>
         </div>
       </article>
 
@@ -410,7 +411,7 @@
             <span class="contact-icon">✉️</span>
             <div>
               <strong>E-mail</strong><br />
-              <a href="mailto:info@stemklank.be">info@stemklank.be</a>
+              <a href="/cdn-cgi/l/email-protection#8ae3e4ece5caf9feefe7e1e6ebe4e1a4e8ef"><span class="__cf_email__" data-cfemail="731a1d151c330007161e181f121d185d1116">[email&#160;protected]</span></a>
             </div>
           </li>
           <li>
@@ -442,7 +443,8 @@
       <!-- Contact form -->
       <div class="contact-form-wrap">
         <h3>Stuur ons een bericht</h3>
-        <form class="contact-form" action="#" method="post" aria-label="Contactformulier">
+        <!-- Static hosting: form uses mailto. For a real backend, replace with Formspree endpoint -->
+        <form class="contact-form" action="mailto:info@stemklank.be" method="get" enctype="text/plain" aria-label="Contactformulier">
           <div class="form-group">
             <label for="name">Naam *</label>
             <input type="text" id="name" name="name" placeholder="Uw volledige naam" required />
@@ -472,7 +474,7 @@
           </div>
           <div class="form-group form-check">
             <input type="checkbox" id="privacy" name="privacy" required />
-            <label for="privacy">Ik ga akkoord met de <a href="#">privacyverklaring</a> *</label>
+            <label for="privacy">Ik ga akkoord met de <a href="#privacy-policy">privacyverklaring</a> *</label>
           </div>
           <button type="submit" class="btn btn-primary">Verstuur bericht</button>
         </form>
@@ -484,13 +486,44 @@
 
 </main>
 
+<!-- ===================== PRIVACY POLICY ===================== -->
+<section id="privacy-policy" class="section bg-light">
+  <div class="container" style="max-width: 800px;">
+    <div class="section-header" style="text-align:left; max-width:100%;">
+      <p class="eyebrow">Juridisch</p>
+      <h2>Privacyverklaring</h2>
+    </div>
+    <div class="privacy-content">
+      <h3>1. Verantwoordelijke voor de verwerking</h3>
+      <p>Praktijk Stem &amp; Klank, Kerkstraat 12, 9200 Dendermonde. E-mail: <a href="mailto:info@stemklank.be">info@stemklank.be</a> — Telefoon: 052 12 34 56.</p>
+
+      <h3>2. Welke gegevens verzamelen wij?</h3>
+      <p>Via het contactformulier verwerken wij uitsluitend de gegevens die u zelf invult: naam, e-mailadres, telefoonnummer en uw bericht. Wij verzamelen geen gevoelige medische informatie via de website.</p>
+
+      <h3>3. Waarvoor gebruiken wij uw gegevens?</h3>
+      <p>Uw gegevens worden uitsluitend gebruikt om uw vraag te beantwoorden of een afspraak in te plannen. Wij delen uw gegevens nooit met derden voor commerciële doeleinden.</p>
+
+      <h3>4. Bewaartermijn</h3>
+      <p>Contactgegevens worden bewaard zolang als nodig om uw vraag te behandelen, en maximaal 1 jaar nadien, tenzij een therapeutische relatie tot stand komt waarbij de wettelijke bewaartermijnen voor medische dossiers gelden (30 jaar voor minderjarigen, tot 30 jaar na de meerderjarigheid).</p>
+
+      <h3>5. Uw rechten</h3>
+      <p>U heeft het recht op inzage, correctie, verwijdering en overdraagbaarheid van uw persoonsgegevens. U kunt hiervoor contact opnemen via <a href="mailto:info@stemklank.be">info@stemklank.be</a>. U heeft ook het recht een klacht in te dienen bij de <a href="https://www.gegevensbeschermingsautoriteit.be" target="_blank" rel="noopener">Gegevensbeschermingsautoriteit</a>.</p>
+
+      <h3>6. Cookies</h3>
+      <p>Deze website maakt geen gebruik van tracking- of analytische cookies. Er worden geen externe statistieken bijgehouden.</p>
+
+      <p style="margin-top:2rem; font-size:0.85rem; color: var(--clr-text-light);">Laatste wijziging: januari 2024</p>
+    </div>
+  </div>
+</section>
+
 <!-- ===================== FOOTER ===================== -->
 <footer class="site-footer">
   <div class="container footer-inner">
     <div class="footer-brand">
       <div class="logo-mark small">S&amp;K</div>
       <p class="footer-tagline">Elke stem verdient aandacht.</p>
-      <p>Praktijk Stem &amp; Klank<br />Kerkstraat 12, 9200 Dendermonde<br /><a href="tel:+3252123456">052 12 34 56</a> · <a href="mailto:info@stemklank.be">info@stemklank.be</a></p>
+      <p>Praktijk Stem &amp; Klank<br />Kerkstraat 12, 9200 Dendermonde<br /><a href="tel:+3252123456">052 12 34 56</a> · <a href="/cdn-cgi/l/email-protection#660f080009261512030b0d0a07080d480403"><span class="__cf_email__" data-cfemail="a4cdcac2cbe4d7d0c1c9cfc8c5cacf8ac6c1">[email&#160;protected]</span></a></p>
     </div>
     <div class="footer-nav">
       <h4>Navigatie</h4>
@@ -521,7 +554,7 @@
         <li><a href="#werking">Tarieven</a></li>
         <li><a href="#werking">Terugbetaling</a></li>
         <li><a href="#werking">Online therapie</a></li>
-        <li><a href="#">Privacyverklaring</a></li>
+        <li><a href="#privacy-policy">Privacyverklaring</a></li>
         <li><a href="#">Klachtenbeleid</a></li>
       </ul>
     </div>
@@ -537,7 +570,7 @@
 <!-- Back to top button -->
 <a href="#top" class="back-to-top" aria-label="Terug naar boven">↑</a>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   // Mobile nav toggle
   const toggle = document.querySelector('.nav-toggle');
   const nav = document.querySelector('.main-nav');
@@ -548,31 +581,4 @@
     toggle.classList.toggle('active');
   });
 
-  // Close nav on link click
-  document.querySelectorAll('.main-nav a').forEach(link => {
-    link.addEventListener('click', () => {
-      nav.classList.remove('open');
-      toggle.setAttribute('aria-expanded', 'false');
-      toggle.classList.remove('active');
-    });
-  });
-
-  // Sticky header shadow
-  window.addEventListener('scroll', () => {
-    document.querySelector('header').classList.toggle('scrolled', window.scrollY > 40);
-    document.querySelector('.back-to-top').classList.toggle('visible', window.scrollY > 400);
-  });
-
-  // Smooth scroll (fallback for older browsers)
-  document.querySelectorAll('a[href^="#"]').forEach(a => {
-    a.addEventListener('click', e => {
-      const target = document.querySelector(a.getAttribute('href'));
-      if (target) {
-        e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    });
-  });
-</script>
-</body>
-</html>
+  // Close nav on link
