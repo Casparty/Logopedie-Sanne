@@ -150,6 +150,12 @@ main { padding-top: 68px; }
 /* Explicit order so CSS never fights DOM order */
 .hero-text  { order:1; }
 .hero-image { order:2; }
+.hero-photo {
+  width:100%; border-radius:var(--rl);
+  box-shadow:var(--sh-lg);
+  object-fit:cover;
+  max-height:480px;
+}
 
 .hero-eyebrow { font-size:.76rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:var(--p); margin-bottom:.9rem; }
 .hero h1 { margin-bottom:1.1rem; }
