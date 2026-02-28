@@ -176,6 +176,7 @@ main { padding-top: 68px; }
 .team-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:var(--gap); }
 .team-card { background:var(--white); border-radius:var(--rl); overflow:hidden; box-shadow:var(--sh-sm); transition:box-shadow var(--ease),transform var(--ease); }
 .team-card:hover { box-shadow:var(--sh-md); transform:translateY(-4px); }
+.team-photo { width:100%; aspect-ratio:3/4; object-fit:cover; object-position:top; display:block; }
 .team-info { padding:1.4rem; }
 .team-info h3 { margin-bottom:.2rem; }
 .team-role { font-size:.78rem; color:var(--p); font-weight:600; letter-spacing:.04em; text-transform:uppercase; margin-bottom:.8rem; }
